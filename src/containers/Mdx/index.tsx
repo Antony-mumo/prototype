@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/heading-has-content */
 // import { MDXProvider } from '@mdx-js/react';
 import {Fragment} from 'react';
 // import Post from '../../blog/post.mdx';
@@ -7,13 +8,10 @@ import {Fragment} from 'react';
 // `@mdx-js/rollup`, and that it is configured with
 // `options.providerImportSource: '@mdx-js/react'`.
 
-const components = {
-  h1: (props: any) => <h1 {...props} />
-};
 
 export const MdxContent = () => {
   return (
-    <Fragment>
+    <>
       <h1>cgdsjhgfchds</h1>
       <h1>cgdsjhgfchds</h1>
       <h1>cgdsjhgfchds</h1>
@@ -22,6 +20,6 @@ export const MdxContent = () => {
       <h1>cgdsjhgfchds</h1>
       <h1>cgdsjhgfchds</h1>
       <h1>cgdsjhgfchds</h1>
-    </Fragment>
+    </>
   );
 };

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/role-supports-aria-props */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style.css';

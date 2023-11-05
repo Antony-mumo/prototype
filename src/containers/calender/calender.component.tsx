@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import {AnimatePresence, motion} from 'framer-motion';
 import {useContext, useEffect} from 'react';
 import {CALENDER_VIEW} from '../../constants';

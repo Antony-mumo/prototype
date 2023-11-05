@@ -28,7 +28,7 @@ const Myinfo = () => {
     <div className="Myinfo">
       <About />
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
-      <div className="join_dis">
+      {/* <div className="join_dis">
         <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
           <Btn
             ico="fab fa-2x fa-discord"
@@ -37,7 +37,7 @@ const Myinfo = () => {
             overlay="Click the link"
           />
         </a>
-      </div>
+      </div> */}
       <div className="buttom-group">
         <a href={TOP_SECTION.JUDGES_FORM_LINK}>
           {' '}

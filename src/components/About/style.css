@@ -30,6 +30,8 @@
 .Logo {
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 2s infinite alternate;
+  height: 400px;
+  /* weight: 150px; */
 }
 @-webkit-keyframes mover {
   0% {

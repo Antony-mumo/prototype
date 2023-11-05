@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { useEffect, useState } from 'react';
 import { FOOTER, SOCIALS, TOP_SECTION } from '../../Module/General';
 import { Btn } from '../Landing/index.jsx';
@@ -56,28 +57,13 @@ const Footer = () => {
             </a>
           </div>
           <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
-              <img src={Dis} alt="" />
-            </a>
-          </div>
-          <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.linkedin}>
               <img src={Linked} alt="" />
             </a>
           </div>
           <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.email}>
-              <img src={Mail} alt="" />
-            </a>
-          </div>
-          <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
               <img src={Twitter} alt="" />
-            </a>
-          </div>
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.devpost}>
-              <img src={DevPost} alt="" />
             </a>
           </div>
         </div>
