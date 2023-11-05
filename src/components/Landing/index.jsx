@@ -27,7 +27,7 @@ const Myinfo = () => {
   return (
     <div className="Myinfo">
       <About />
-      <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
+      <p className='Myinfo'> {TOP_SECTION.SHORT_DESCRIPTION}</p>
       {/* <div className="join_dis">
         <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
           <Btn

@@ -39,7 +39,6 @@ const TOP_SECTION = {
   SHORT_DESCRIPTION:
     'Join us and more than 300 creatives from across the nation for creation, innovation, & fun.',
   IMG_SRC: boy,
-  DISCORD_LINK: '',
   JUDGES_FORM_LINK:
     'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u',
   HACKERS_REGISTRATION_FORM_LINK:

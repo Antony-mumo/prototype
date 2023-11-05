@@ -1,30 +1,30 @@
-import {UseMedia} from 'hooks/useMedia';
-import {useState} from 'react';
+import { UseMedia } from 'hooks/useMedia';
+import { useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
-import {Accordion} from '../../components/Accordian/index.jsx';
+import {
+  FOOTER,
+  JudgesInfo,
+  Prizeinfo,
+  TOP_SECTION,
+  TeamInfo,
+  frequentlyAskedQuestions,
+  sponsorLogos
+} from '../../Module/General';
+import { Logo, LogoSectionAbout } from '../../components/About/index.jsx';
+import { Accordion } from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
-import {Myinfo} from '../../components/Landing/index.jsx';
-import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
+import { Myinfo } from '../../components/Landing/index.jsx';
+import { FirstPrize, PrizeHeading } from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
 import {
   Sponsor,
-  SponsorsHead,
-  SponsorUS
+  SponsorUS,
+  SponsorsHead
 } from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/Team';
-import {
-  FOOTER,
-  frequentlyAskedQuestions,
-  JudgesInfo,
-  Prizeinfo,
-  sponsorLogos,
-  TeamInfo,
-  TOP_SECTION
-} from '../../Module/General';
+import { JoinTeam, Member } from '../../components/Team';
 import MyCalender from '../calender';
 import './about.css';
 import pattern from './assets/pattern4.png';
@@ -89,19 +89,19 @@ export default function HomePage() {
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
-            <Col className="info-div" sm={12} lg={7} md={7}>
+            {/* <Col className="info-div" sm={12} lg={7} md={7}> */}
               <Myinfo />
-            </Col>
-            <Col className="d-image" sm={12} lg={5} md={5}>
+            {/* </Col> */}
+            {/* <Col className="d-image" sm={12} lg={5} md={5}>
               <MyCalender />
-            </Col>
+            </Col> */}
           </Row>
 
-          <Row className="mediaInfo">
+          {/* <Row className="mediaInfo">
             <Col className="" sm={12} lg={12} md={12}>
               <Media />
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </div>
       <Container fluid>
