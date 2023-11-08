@@ -14,9 +14,9 @@ button {
   border: none;
   border-radius: 19px;
   font-size: 2rem;
-  color: rgb(255, 255, 255);
+  color: #FFE286;
   background-color: #6A63B7;
-  font-weight: 300;
+  font-weight: bold;
   position: relative;
 }
 
@@ -60,7 +60,7 @@ p {
 
 .Myinfo {
   text-align: center;
-  /* margin-left: 10vh; */
+  color: #FFE286;
 }
 
 .Myinfo p {
