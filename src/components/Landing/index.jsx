@@ -18,7 +18,7 @@ const About = () => {
   return (
     <div className="AboutMe">
       <h2>{TOP_SECTION.TITLE}</h2>
-      <MytypedComponent />
+      {/* <MytypedComponent /> */}
     </div>
   );
 };

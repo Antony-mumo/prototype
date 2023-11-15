@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     margin: 0;
     display: ${props => (props.toggle ? 'none' : 'static')};
     height: 100vh;
-    // width: 100vw;
+    width: 100vw;
     position: fixed;
     top: ${props => (props.toggle ? '-1000px' : '0px')};
     transition: top 1s;
@@ -59,17 +59,17 @@ const ButtonWrapper = styled.div`
 
 const Button = styled.li`
   width: 10rem;
-  color: #fff;
+  color: #010606;
   padding: 5px 15px;
   text-align: center;
-  background-color: #010606;
+  background-color: #ffe286;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
   &:hover {
-    background-color: #0056b3;
+    background-color: #fff;
   }
 `;
 
@@ -158,9 +158,6 @@ const Navbar = () => {
               </NavLink>
             </NavLinkWrapper>
             <ButtonWrapper>
-              <Link to={`#signup`}>
-                <Button className="links">SignUp </Button>{' '}
-              </Link>
               <Link to={`#signin`}>
                 <Button className="links">SignIn </Button>{' '}
               </Link>

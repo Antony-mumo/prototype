@@ -35,7 +35,6 @@ import zoha from './Assets/teami/zoha.png';
 
 const TOP_SECTION = {
   TITLE: 'National Creative Competition',
-  Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
   SHORT_DESCRIPTION:
     'Join us and more than 300 creatives from across the nation for creation, innovation, & fun.',
   IMG_SRC: boy,
