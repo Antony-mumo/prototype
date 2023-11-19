@@ -5,16 +5,26 @@
   display: inline-block;
   margin-left: 25px;
   margin-right: 25px;
+  border: 2px solid lightgray;
+  padding: 5px ;
+  border-radius: 30px;
 }
 .single a {
-  color: rgba(231, 228, 228);
+  color: #ffff;
   position: relative;
   top: 0px;
-  transition: top 0.2s linear;
+  transition:  0.2s linear;
+  text-decoration: none;
+
+}
+.single:hover {
+  background: forestgreen;
 }
 .single a:hover {
   color: white;
   top: -5px;
+  border-radius: 2px;
+  border-color: lightgray;
 }
 @media (max-width: 570px) {
   .single {

@@ -34,9 +34,11 @@ import Ryah from './Assets/teami/Ryah.jpg';
 import zoha from './Assets/teami/zoha.png';
 
 const TOP_SECTION = {
-  TITLE: 'National Creative Competition',
+  TITLE: 'Reinvesting Kenyan Tourism Through Innovation',
   SHORT_DESCRIPTION:
-    'Join us and more than 300 creatives from across the nation for creation, innovation, & fun.',
+    'We promote local tourism, discover hidden gems, ' +
+      'or engage the community. Understanding the purpose will guide' +
+      ' the planning process.',
   IMG_SRC: boy,
   JUDGES_FORM_LINK:
     'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u',

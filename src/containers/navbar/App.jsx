@@ -51,12 +51,12 @@ const NavLinkWrapper = styled.div`
   position: fixed;
   top: ${props => (props.toggle ? '-1000px' : '0px')};
   transition: top 1s;
-  justify-content: space-between;
+  justify-content: space-evenly;
   .nav-content {
     flex-direction: row;
     width: 100%;
     height: 55%;
-    background-color: #121930;
+    background-color: #EC0D0B;
   }
 }
 `;
@@ -119,7 +119,7 @@ const Navigation = ({ isOffset }) => {
   const handleSignIn = () => {
     // Implement sign-in logic here
     // For example: redirect to a sign-in page or trigger a sign-in modal
-    console.log('Sign in clicked');
+    // console.log('Sign in clicked');
   };
 
   return (
@@ -134,9 +134,8 @@ const Navigation = ({ isOffset }) => {
                     src={Logo}
                     alt=""
                     style={{
-                      width: '100px',
-                      height: '60px',
-                      marginRight: '20px'
+                      objectFit: 'contain',
+                      width: '20%',
                     }}
                   />
                 </Link>
@@ -156,25 +155,14 @@ const Navigation = ({ isOffset }) => {
                   <span className="links">sponsors </span>{' '}
                 </Link>
               </NavLink>
-              <NavLink>
-                <Link to={`#team`}>
-                  <span className="links">team </span>{' '}
-                </Link>
-              </NavLink>
+             
               <NavLink>
                 <Link to={`#faq`}>
                   <span className="links">FAQ </span>{' '}
                 </Link>
               </NavLink>
             </NavLinkWrapper>
-            <ButtonWrapper>
-              {/* Sign In button */}
-              {/* <Link to="#signin"> */}
-                <Button className="links" onClick={handleSignIn}>
-                  SignIn
-                </Button>
-              {/* </Link> */}
-            </ButtonWrapper>
+           
             {/* Close button */}
             <li>
               <img

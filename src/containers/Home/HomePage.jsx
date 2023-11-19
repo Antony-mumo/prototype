@@ -28,8 +28,12 @@ import { JoinTeam, Member } from '../../components/Team';
 import MyCalender from '../calender';
 import './about.css';
 import pattern from './assets/pattern4.png';
+import {createBox} from "framer-motion";
 
 const SponsorGroup = (props, index) => {
+  let bckImage = "https://static.wixstatic.com/media/11062b_8823416ca27f48d7ae591192c34af669f000.jpg" +
+    "/v1/fill/w_1512,h_820,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/" +
+    "11062b_8823416ca27f48d7ae591192c34af669f000.jpg"
   return (
     <Row key={index}>
       {props.map((s, i) => (
@@ -41,8 +45,8 @@ const SponsorGroup = (props, index) => {
     </Row>
   );
 };
-
 // Prize group
+///create box with 50px height and width
 const PrizeGroup = (props, index) => {
   return (
     <Row key={index}>
@@ -68,6 +72,10 @@ const TeamMembers = (props, index) => {
   );
 };
 
+//make image carousel for the background
+
+
+
 const FrequentlyAsked = (props, index) => {
   return (
     <Row key={index} className="sf">
@@ -85,23 +93,25 @@ export default function HomePage() {
   UseMedia('min-width', 1000, setMedia);
 
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
+    
+    <div className="Whole_div" >
       <div className="color_sectiom" id="home">
-        <Container fluid>
-          <Row className="Row info">
-            {/* <Col className="info-div" sm={12} lg={7} md={7}> */}
+        <Container fluid style={{backgroundImage: `url(${  "https://static.wixstatic.com/media/11062b_8823416ca27f48d7ae591192c34af669f000.jpg" +
+          "/v1/fill/w_1512,h_820,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/" +
+          "11062b_8823416ca27f48d7ae591192c34af669f000.jpg"})`}}>
+          <Row className="Row info" >
               <Myinfo />
-            {/* </Col> */}
-            {/* <Col className="d-image" sm={12} lg={5} md={5}>
-              <MyCalender />
-            </Col> */}
           </Row>
-
-          {/* <Row className="mediaInfo">
+          <Row>
+            <div className="box" style={{width: 50, height: 50}}>
+              box
+            </div>
+          </Row>
+          {<Row className="mediaInfo">
             <Col className="" sm={12} lg={12} md={12}>
               <Media />
             </Col>
-          </Row> */}
+          </Row>}
         </Container>
       </div>
       <Container fluid>
@@ -116,21 +126,18 @@ export default function HomePage() {
         </Row>
 
         {/* ********Frequently asked Questions here ***** */}
-        <div className="Myfaqs" id="faq">
-          {frequentlyAskedQuestions.map(FrequentlyAsked)}
-          {/* ********Frequently asked Questions ending here ***** */}
-        </div>
+        <Row>
+          <div className="Myfaqs" id="faq">
+            {frequentlyAskedQuestions.map(FrequentlyAsked)}
+            {/* ********Frequently asked Questions ending here ***** */}
+          </div>
+        </Row>
+        
 
         {/* ********Prizes here ***** */}
-        <Row className="prizesection" id="prizes">
-          <PrizeHeading type="Prize section" />
+        <Row className="prizesection" id="prizes" style={{backgroundImage: `url(${ pattern})`}}>
+          <PrizeHeading type="Prizes"/>
           {Prizeinfo.map(PrizeGroup)}
-        </Row>
-        {/* ********Prizes ending here ***** */}
-
-        <Row className="prizesection non-coding">
-          <PrizeHeading type="Non-coding prizes" />
-          <h2>coming soon</h2>
         </Row>
 
         {/* ********Sponsors here ***** */}
@@ -144,32 +151,16 @@ export default function HomePage() {
 
         {media && <Birds top="120vh" left="0vh" type="" />}
 
-        {/* ********Team here ***** */}
-        <h1 id="team">Our Team</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={FOOTER.JOIN_TEAM}
-            content="Interested in joining our team"
-          />
-        )}
-        {TeamInfo.map(TeamMembers)}
-        {/* ********Team ending here ***** */}
 
         {/* ********Judges here ***** */}
 
         <h1 id="team">Judges</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={TOP_SECTION.JUDGES_FORM_LINK}
-            content="Interested in being judge"
-          />
-        )}
         {JudgesInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
+        <Footer />
       </Container>
-      <Footer />
+      
     </div>
+    
   );
 }

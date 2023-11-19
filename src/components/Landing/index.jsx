@@ -17,8 +17,8 @@ const Btn = props => {
 const About = () => {
   return (
     <div className="AboutMe">
-      <h2>{TOP_SECTION.TITLE}</h2>
-      {/* <MytypedComponent /> */}
+      <h2 className="LangingTitle">{TOP_SECTION.TITLE}</h2>
+      { <MytypedComponent /> }
     </div>
   );
 };
@@ -28,28 +28,18 @@ const Myinfo = () => {
     <div className="Myinfo">
       <About />
       <p className='Myinfo'> {TOP_SECTION.SHORT_DESCRIPTION}</p>
-      {/* <div className="join_dis">
-        <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
-          <Btn
-            ico="fab fa-2x fa-discord"
-            class="join_disco"
-            type="Join our discord"
-            overlay="Click the link"
-          />
-        </a>
-      </div> */}
       <div className="buttom-group">
         <a href={TOP_SECTION.JUDGES_FORM_LINK}>
           {' '}
-          <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
+          <Btn class="sponsor_btn" type="Become Tourism Ambassador" overlay="Sign Up!" />
         </a>
 
         <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
           {' '}
           <Btn
             class="register"
-            type="Register "
-            overlay="Hackers registration"
+            type="Apply for national competiton 2024 "
+            overlay="Lets go"
           />
         </a>
       </div>

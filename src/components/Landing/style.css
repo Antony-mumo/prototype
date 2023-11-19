@@ -9,13 +9,9 @@
 }
 
 button {
-  width: 22rem;
-  height: 6rem;
   border: none;
   border-radius: 19px;
-  font-size: 2rem;
-  color: #FFE286;
-  background-color: #6A63B7;
+  color: #FFFF;
   font-weight: bold;
   position: relative;
 }
@@ -36,19 +32,22 @@ button {
 }
 
 .buttom-group{
-  padding: 50;
-  width: 100%;
-  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
-.register {
-  margin-left: 1rem;
+.register , .sponsor_btn{
   border: 2px solid rgb(255, 255, 255);
   background-color: transparent;
 }
 
 .AboutMe h2 {
-  font-size: 8rem;
+  font-size: 4rem;
   font-family: 'Noto Sans', sans-serif;
 }
 
@@ -59,16 +58,17 @@ p {
 }
 
 .Myinfo {
+  color: #FFFF;
+  display: flex;
   text-align: center;
-  color: #FFE286;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .Myinfo p {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+font-weight: 400;
+  width: 70%;
 }
 
 /* Over lay effect */
