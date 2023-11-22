@@ -15,7 +15,7 @@ import egg from './Assets/sponsorsLogos/egg.png';
 import glimpse from './Assets/sponsorsLogos/glimpse.png';
 import interviewC from './Assets/sponsorsLogos/interview-cake.jpg';
 import ll from './Assets/sponsorsLogos/ll.png';
-import qoom from './Assets/sponsorsLogos/qoom.svg';
+
 import Replit from './Assets/sponsorsLogos/replit.png';
 import sublime from './Assets/sponsorsLogos/sublime.png';
 import taskade from './Assets/sponsorsLogos/taskade.png';
@@ -64,11 +64,11 @@ const MIDDLE_SECTION = {
 const FOOTER = {
   VOLUNTEERING_FORM: {
     required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u'
+    src: ''
   },
   JOIN_TEAM: {
     required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u'
+    src: ' '
   },
   Privacy_policy: {
     required: true,
@@ -319,11 +319,11 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
-  [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
+  [ {src: sublime}, {src: echoAR}], //Array 1
+  [{src: taskade}, {src: Replit},{src: cfc}], //Array 2
   [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
-  [{src: egg}, {src: ll}, {src: ACF}] //Array 4
-];
+  [{src: egg}, {src: cfc},, {src: ACF}] //Array 4
+]
 
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
@@ -361,7 +361,7 @@ const frequentlyAskedQuestions = [
       {
         label: 'I have more questions?',
         content:
-          'Reach us directly at nationalcreative@gmail.com  we would happy to help you.'
+          'Reach us directly.'
       },
       {
         label: 'Can i volunteer?',

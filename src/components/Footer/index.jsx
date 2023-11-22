@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useEffect, useState } from 'react';
+import { NavLink } from "react-dom";
 import { FOOTER, SOCIALS, TOP_SECTION } from '../../Module/General';
 import { Btn } from '../Landing/index.jsx';
 import PrivacyPolicy from './assets/Privacy policy.pdf';
@@ -21,8 +22,8 @@ const GithubTemplate = ({hideTemplate}) => {
         <p>
           Join us to{' '}
           <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>Gear Up</a>,
-          where we will be hosting PUBLIC workshops, tech talks, panel
-          discussions, and career sessions!
+          where we will be hosting PUBLIC competition, Reach outs, panel
+          discussions, and Live sessions!
         </p>
       </div>
       <img onClick={hideTemplate} src={cross} />
@@ -53,17 +54,16 @@ const Footer = () => {
         <div className="social-icons-container">
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.instagram}>
-              <img src={Insta} alt="" />
             </a>
           </div>
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.linkedin}>
-              <img src={Linked} alt="" />
+          
             </a>
           </div>
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
-              <img src={Twitter} alt="" />
+        
             </a>
           </div>
         </div>
@@ -72,8 +72,7 @@ const Footer = () => {
             <Btn type="Register" overlay="Fill the form" />
           </a>
           {FOOTER.VOLUNTEERING_FORM.required && (
-            <a href={FOOTER.VOLUNTEERING_FORM.src}>
-              <Btn type="Volunteer" class="Volunteer" overlay="Fill the form" />
+            <a href={"t"}>
             </a>
           )}
         </div>
@@ -81,7 +80,7 @@ const Footer = () => {
           <p>
             Contact us{' '}
             <a href={SOCIALS.email}>
-              <em>{SOCIALS.mail}</em>
+              
             </a>{' '}
           </p>
 

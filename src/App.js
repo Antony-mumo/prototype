@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { connect } from 'react-redux';
 
 import { history } from '../_helpers';
@@ -7,6 +7,9 @@ import { alertActions } from '../_actions';
 import { PrivateRoute } from '../_components';
 import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
+import application from "./pages/application"
+import login from './pages/login';
+import SignIn from "./component/Signin/index"
 
 class App extends React.Component {
     constructor(props) {
@@ -19,34 +22,17 @@ class App extends React.Component {
         });
     }
 
-    render() {
-        const { alert } = this.props;
+    function App() {
         return (
-            <div className="jumbotron">
-                <div className="container">
-                    <div className="col-sm-8 col-sm-offset-2">
-                        {alert.message &&
-                            <div className={`alert ${alert.type}`}>{alert.message}</div>
-                        }
-                        <Router history={history}>
-                            <div>
-                                <PrivateRoute exact path="/" component={HomePage} />
-                                <Route path="/login" component={LoginPage} />
-                            </div>
-                        </Router>
-                    </div>
-                </div>
-            </div>
+          <Router>
+              <Route path='/' component={Home} exact />
+              <Route path='/projects' component={ProjectPage} exact />
+              <MuiThemeProvider theme={theme} />
+              <Route exact path="/application" component={application} />
+          </Router>
         );
-    }
-}
-
-function mapStateToProps(state) {
-    const { alert } = state;
-    return {
-        alert
-    };
-}
+      }
+      
 
 const connectedApp = connect(mapStateToProps)(App);
 export { connectedApp as App }; 

@@ -7,6 +7,8 @@ import hamLogo from './assets/ham.svg';
 import Logo from './assets/logo.png';
 import './styles.scss';
 import { MdxContent } from '../Mdx';
+import SignIn from ".././../component/Signin/index"
+import SignUp from ".././../component/Signup/index"
 
 const NAVIGATION_OFFSET = 66;
 
@@ -129,7 +131,7 @@ const Navigation = ({ isOffset }) => {
           <NavLinkContainer className="nav-content" ref={navigationRef}>
             <NavLinkWrapper>
             <NavLink>
-                <Link to={`#home`}>
+                <Link to={`/`}>
                   <img
                     src={Logo}
                     alt=""
@@ -141,24 +143,34 @@ const Navigation = ({ isOffset }) => {
                 </Link>
               </NavLink>
               <NavLink>
-                <Link to={`#home`}>
+                <Link to={`/`}>
                   <span className="links">Home </span>{' '}
                 </Link>
               </NavLink>
               <NavLink>
-                <Link to={`#prizes`}>
+                <Link to={`/`}>
                   <span className="links">prizes </span>{' '}
                 </Link>
               </NavLink>
               <NavLink>
-                <Link to={`#sponsors`}>
+                <Link to={`/`}>
                   <span className="links">sponsors </span>{' '}
                 </Link>
               </NavLink>
              
               <NavLink>
-                <Link to={`#faq`}>
+                <Link to={`/`}>
                   <span className="links">FAQ </span>{' '}
+                </Link>
+              </NavLink>
+              <NavLink>
+                <Link to={`/register`}>
+                  <span className="links">Register </span>{' '}
+                </Link>
+              </NavLink>
+              <NavLink>
+                <Link to={`/login`}>
+                  <span className="links">Log in  </span>{' '}
                 </Link>
               </NavLink>
             </NavLinkWrapper>
@@ -193,10 +205,17 @@ const Navigation = ({ isOffset }) => {
         <Route path="/" exact={true}>
           <HomePage />
         </Route>
+        <Route path="/login" exact={true}>
+          <SignIn />
+        </Route>
+        <Route path="/register" exact={true}>
+          <SignUp />
+        </Route>
       </Switch>
     </Router>
   );
 };
+
 
 const Navbar = () => {
   const [isOffset, setIsOffset] = useState(false);
@@ -212,5 +231,9 @@ const Navbar = () => {
 
   return <Navigation isOffset={isOffset} />;
 };
+
+
+
+
 
 export default Navbar;

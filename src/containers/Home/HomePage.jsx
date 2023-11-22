@@ -103,6 +103,9 @@ export default function HomePage() {
               <Myinfo />
           </Row>
           <Row>
+
+          </Row>
+          <Row>
             <div className="box" style={{width: 50, height: 50}}>
               box
             </div>
@@ -154,12 +157,12 @@ export default function HomePage() {
 
         {/* ********Judges here ***** */}
 
-        <h1 id="team">Judges</h1>
-        {JudgesInfo.map(TeamMembers)}
+        {/* <h1 id="team">Judges</h1>
+        {JudgesInfo.map(TeamMembers)} */}
         {/* ********Team ending here ***** */}
         <Footer />
       </Container>
-      
+
     </div>
     
   );

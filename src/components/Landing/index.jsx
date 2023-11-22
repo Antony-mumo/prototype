@@ -1,6 +1,7 @@
 import {SOCIALS, TOP_SECTION} from '../../Module/General';
 import MytypedComponent from '../Typed/index.js';
 import './style.css';
+import {NavLink, Link} from "react-router-dom"
 
 const Btn = props => {
   return (
@@ -26,24 +27,25 @@ const About = () => {
 const Myinfo = () => {
   return (
     <div className="Myinfo">
+
       <About />
       <p className='Myinfo'> {TOP_SECTION.SHORT_DESCRIPTION}</p>
       <div className="buttom-group">
-        <a href={TOP_SECTION.JUDGES_FORM_LINK}>
-          {' '}
+        <NavLink to = "/login">
           <Btn class="sponsor_btn" type="Become Tourism Ambassador" overlay="Sign Up!" />
-        </a>
+        </NavLink>
 
-        <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
+        <NavLink to = "/login">
           {' '}
           <Btn
             class="register"
             type="Apply for national competiton 2024 "
             overlay="Lets go"
           />
-        </a>
+        </NavLink>
       </div>
     </div>
+
   );
 };
 
