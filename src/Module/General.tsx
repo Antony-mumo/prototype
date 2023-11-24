@@ -7,11 +7,11 @@ import hackathonLogo from './Assets/flag-gifs.gif';
  */
 
 import boy from './Assets/boy.png';
-import pass from './Assets/sponsorsLogos/1pass.png';
-import ACF from './Assets/sponsorsLogos/ACF.png';
-import cfc from './Assets/sponsorsLogos/cfc.png';
-import echoAR from './Assets/sponsorsLogos/echoAR.png';
-import egg from './Assets/sponsorsLogos/egg.png';
+import pass from './Assets/sponsorsLogos/logo.png';
+import ACF from './Assets/sponsorsLogos/logo.png';
+import cfc from './Assets/sponsorsLogos/logo.png';
+import echoAR from './Assets/sponsorsLogos/logo.png';
+import egg from './Assets/sponsorsLogos/logo.png';
 import glimpse from './Assets/sponsorsLogos/glimpse.png';
 import interviewC from './Assets/sponsorsLogos/interview-cake.jpg';
 import ll from './Assets/sponsorsLogos/ll.png';
@@ -319,10 +319,8 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [ {src: sublime}, {src: echoAR}], //Array 1
-  [{src: taskade}, {src: Replit},{src: cfc}], //Array 2
-  [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
-  [{src: egg}, {src: cfc},, {src: ACF}] //Array 4
+  [ {src: pass}, {src: pass},{src: pass}], //Array 1
+   //Array 4
 ]
 
 /** Instructions
